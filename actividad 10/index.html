@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+
+
+</head>
+
+<body>
+
+    <button onclick="sumaMultiplicacion(1,2,3)">ver</button>
+
+
+
+
+
+    <script>
+        function sumaDosNumeros(numero1, numero2) {
+            let suma = numero1 + numero2;
+            console.log("numeros:", suma);
+
+            return suma;
+
+        }
+
+        function multiplicarDosNumeros(numero1,numero2){
+
+            let multi=numero1*numero2;
+            console.log("resultado multi:", multi)
+            return multi;
+        }
+
+        function sumaMultiplicacion(numero1, numero2,numero3){
+            let suma = sumaDosNumeros(numero1,numero2)
+
+            let multiplicacion = multiplicarDosNumeros(suma,numero3)
+
+            console.log("multiplicacion:",multiplicacion);
+            return multiplicacion
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

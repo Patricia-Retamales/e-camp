@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+
+    <P id="texto">Este es mi parrafo</P>
+    <p id="texto2">este es mi parrafo con estilo</p>
+    <button onclick="cambiartexto()">Cambiar</button>
+
+
+
+
+    <script>
+
+        function cambiartexto() {
+
+            document.getElementById("texto").innerHTML = "nuevo contenido!!!"
+
+            var parrafo = document.getElementById('texto2');
+
+            parrafo.style.color = "blue";
+            parrafo.style.fontSize = "20px";
+            // parrafo.style.display = "none";
+
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

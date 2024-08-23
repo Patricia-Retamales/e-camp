@@ -1,0 +1,51 @@
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header, footer{
+
+background-color: rgb(4, 9, 14);
+color: white;
+text-align: center;
+padding: 1em;
+}
+
+
+section{
+
+background-color:lightblue ;
+
+}
+
+
+main{
+
+    padding: 1em;
+}
+
+@media( max-width:600px ){
+
+    /* reglas */
+
+    section{
+
+        background-color: lightcoral;
+    }
+
+
+}
+
+@media( min-width:601px) and (max-width:1024px){
+
+    section{
+
+background-color: lightgreen;
+    }
+
+
+
+}

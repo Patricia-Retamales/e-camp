@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1: Cambiar Color de Fondo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button id="cambiarColor">Cambiar Color de Fondo</button>
+ 
+    <script>
+        $(document).ready(function(){
+            $("#cambiarColor").click(function(){
+                // Cambiar el color de fondo a un color aleatorio
+                var nuevoColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+                $("body").css("background-color", nuevoColor);
+                
+                // Mostrar en consola el nuevo color de fondo
+                console.log("El nuevo color de fondo es: " + nuevoColor);
+            });
+        });
+    </script>
+</body>
+</html>

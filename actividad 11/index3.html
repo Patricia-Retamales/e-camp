@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinar Estación del Año</title>
+</head>
+
+<body>
+    <h1>Determina la Estación del Año</h1><label for="mes">Ingresa el número del mes (1-12): </label><input
+        type="number" id="mes" min="1" max="12"><button onclick="determinarEstacion()">Determinar Estación</button>
+    <p id="resultado"></p>
+    <script>
+    function determinarEstacion() {
+            const mes = parseInt(document.getElementById("mes").value);
+            let estacion;
+
+            if (mes >= 1 && mes <= 12) {
+                switch (mes) {
+            case6: case7: case8:
+                estacion = "Invierno";
+                break;
+                case9: case10: case11:
+                estacion = "Primavera";
+                break;
+                case12: case1: case2:
+                estacion = "Verano";
+                break;
+                case3: case4: case5:
+                estacion = "Otoño";
+                break;
+            }
+            document.getElementById("resultado").innerText = "La estación es: " + estacion;
+        } else {
+            document.getElementById("resultado").innerText = "Por favor, ingresa un número de mes válido entre 1 y 12.";
+        }
+}
+    </script>
+</body>
+
+</html>

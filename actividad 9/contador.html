@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+
+<body>
+
+    <h1>Contador</h1>
+    <p>Has hecho x <span id="valorId">0</span> veces</p>
+    <button onclick="aumentarContador()">Click aqui</button>
+    <button onclick="disminuirContador()">Click aqu restar</button>
+
+
+
+
+    <script>
+
+        // Global
+
+        var contador = 0;
+
+        function aumentarContador() {
+            contador = contador + 1;
+
+            document.getElementById("valorId").textContent = contador;
+
+        }
+
+
+        function disminuirContador(){
+            if(contador > 0){
+
+                 contador = contador- 1;
+
+            document.getElementById("valorId").textContent = contador;
+
+
+
+            }else{
+
+                alert("no aplica")
+            }
+           
+
+
+
+        }
+
+        //contador =0
+        //contador =0 +1 }==> 1
+        //contador =0 1+1 }==> 2
+
+    </script>
+
+</body>
+
+</html>

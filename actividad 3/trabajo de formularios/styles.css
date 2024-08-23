@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0202;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#registro-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+   font-size: 45px;
+   width: 70%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-text, select, input[type="date"], input[type="number"], input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+fieldset {
+    margin-bottom: 10px;
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    width: 60%;
+    padding: 10px;
+    background-color: #6557b7;
+    color: #faf8f8;
+    border: none;
+    border-radius: 19px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b18aae;
+}
+
+input:focus, select:focus, input[type="date"]:focus, input[type="number"]:focus, input[type="file"]:focus {
+    border-color: #80bdff;
+    background-color: rgb(247, 242, 234);
+    outline: none;
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+}

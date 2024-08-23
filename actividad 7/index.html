@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Centrados con Flexbox</title>
+    <style>
+        /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+        .container {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center;    /* Centra verticalmente */
+            height: 100vh;          /* Ocupa el 100% de la altura de la ventana */
+        }
+
+        /* Estilos para el elemento centrado */
+        .item {
+            width: 30vh;    /* 30% del ancho de la pantalla */
+            height: 30vw;   /* 30% de la altura de la pantalla */
+            background-color: #9c5fd2; /* Color de fondo */
+            color: white;   /* Color del texto */
+            display: flex;
+            justify-content: center; /* Centra el contenido dentro del item */
+            align-items: center;    /* Centra el contenido dentro del item */
+            font-size: 25px; /* Tamaño del texto */
+            text-align: center; /* Alineación del texto */
+            border-radius: 100px; /* Esquinas redondeadas */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            Elemento Centrado
+        </div>
+    </div>
+</body>
+</html>

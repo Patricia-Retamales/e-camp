@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Formulario de registro</h1>
+
+    <form action="/submit" method="get">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" placeholder="Nombre" name="nombre" minlength="1" maxlength="10" id="nombre" required>
+
+        <br><br>
+
+
+        <label for="clave">Clave</label>
+        <input type="password" minlength="0" maxlength="10" id="clave"required>
+
+        <br><br>
+
+
+        <label for="">Edad</label>
+        <input type="number" name="edad" id="edad" required>
+
+        <br><br>
+
+
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" name="fecha" id="fecha" required>
+
+        <br><br>
+
+        
+        <label for="checkbox">Suscribirse</label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+
+        <br><br>
+
+
+        <h2>Genero</h2>
+
+        <label for="radio">Hombre</label>
+        <input type="radio" name="genero" id="hombre" value="hombre" required>
+
+        
+        <label for="radio">Mujer</label>
+        <input type="radio" name="genero" id="mujer" value="mujer">
+
+        <br><br>
+
+        <button type="submit">Registrar</button>
+
+    </form>
+
+</body>
+
+</html>

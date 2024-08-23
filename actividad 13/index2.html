@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2: Contador de Clics</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button id="contadorClics">Haz Clic</button>
+    <p>Clics: <span id="contador">0</span></p>
+ 
+    <script>
+        $(document).ready(function(){
+            // Inicializar el contador
+            var contador = 0;
+
+            // Evento click para incrementar el contador
+            $("#contadorClics").click(function(){
+                contador++; // Incrementar el contador
+                
+                // Actualizar el texto en la página
+                $("#contador").text(contador);
+                
+                // Mostrar el contador en la consola
+                console.log("Número de clics: " + contador);
+            });
+        });
+    </script>
+</body>
+</html>

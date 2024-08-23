@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #401e43;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+#personal-info{
+
+   border: 1px solid black;
+   background-color: #fafaf7;
+}
+
+#preferencias{
+
+    border: 1px solid black;
+    background-color: #fcfcfb;
+    border-radius: 8px;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+  
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+button {
+    background-color: #87bef8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #401e43;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+}
+
+
+.desktop-only {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .desktop-only {
+        display: block;
+    }
+}
